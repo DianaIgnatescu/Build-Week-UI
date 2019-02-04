@@ -1,3 +1,6 @@
+#styling-mixins .border-bottom-grey {
+  border-bottom: 1px solid #BEBEBE;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,4 +167,130 @@ p {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
+}
+header .nav-toggle {
+  background-color: #151515;
+  padding: 1.5%;
+}
+header .nav-toggle .navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  header .nav-toggle .navigation {
+    max-width: 92%;
+    margin: 0 4%;
+  }
+}
+header .nav-toggle .navigation .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+}
+header .nav-toggle .navigation .logo .menu-button {
+  position: absolute;
+  left: 20px;
+  width: 32px;
+  cursor: pointer;
+}
+header .nav-toggle .navigation .logo h1 {
+  padding-left: 60px;
+}
+header .nav-toggle .navigation .register {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+header .nav-toggle .navigation .register h3 {
+  padding-right: 20px;
+}
+header .nav-toggle .navigation .register button {
+  border-radius: 5px;
+  background-color: #F5A623;
+  font-size: 1.6rem;
+  color: #151515;
+  text-align: center;
+  padding: 5px 10px;
+  border: 2px solid #151515;
+}
+header .nav-toggle .navigation .register button:hover {
+  background-color: #151515;
+  color: #E0E5E9;
+  border: 2px solid #F5A623;
+}
+.menu {
+  max-width: 30%;
+  height: 100vh;
+  padding: 10px 30px;
+  background-image: linear-gradient(to right bottom, #676d85, #5c6077, #52536a, #47465c, #3d3a4f);
+  box-shadow: 0px 1px 10px 2px #202330;
+  border-radius: 0 5px 5px 0;
+  z-index: 2;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .menu {
+    max-width: 100%;
+  }
+}
+.menu a {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #E0E5E9;
+  text-decoration: none;
+  line-height: 4rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #BEBEBE;
+}
+.menu a:hover {
+  color: #F5A623;
+}
+.container-signin {
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  background-color: #3D3A4F;
+  box-shadow: 0px 1px 10px 2px darkgrey;
+}
+.container-signin h2 {
+  margin-top: 40px;
+  padding: 60px 0 20px 0;
+  font-size: 3.2rem;
+  font-weight: normal;
+  text-align: center;
+  color: #F5A623;
+  text-decoration-line: none;
+}
+.container-signin form {
+  padding: 25px;
+}
+.container-signin form p {
+  padding: 15px;
+  margin: 0 20px;
+  color: #676D85;
+  text-decoration: none;
+}
+.container-signin form input {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.container-signin input[type="email"],
+.container-signin input[type="password"] {
+  background-color: #BEBEBE;
+  border: #BEBEBE;
 }
