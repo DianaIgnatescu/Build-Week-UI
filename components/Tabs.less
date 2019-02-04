@@ -1,0 +1,49 @@
+.tabs {
+  .flex(center, center);
+  height: 47px;
+  // @media(min-width: 1280px){
+  //   width: 1280px;
+  // }
+  @media @phone {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 92%;
+    
+    margin: 2% 4%; 
+
+  }
+  .topics {
+    .flex(none, center);
+    @media @phone {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 100%;
+      margin: 60px 0 20px 0;
+    }
+    .title {
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+    .tab {
+      .flex(none, center);
+      color: @navbar-color;
+      background-color: @input-box-lightpurple;
+      margin: 5px 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      font-weight: bold;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .active-tab {
+      background-color: @accent-color;
+      color:@navbar-color;
+      // border: 2px solid yellow;
+    }
+  }
+}

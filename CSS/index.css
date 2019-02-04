@@ -259,6 +259,108 @@ header .nav-toggle .navigation .register button:hover {
 .menu a:hover {
   color: #F5A623;
 }
+section .top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #BEBEBE;
+  margin: 20px 0;
+  padding-bottom: 40px;
+}
+@media (max-width: 500px) {
+  section .top-content {
+    flex-direction: column;
+    margin: 0 4%;
+  }
+}
+section .top-content .left-content {
+  padding-top: 30px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  section .top-content .left-content {
+    width: 100%;
+  }
+}
+section .top-content .left-content h2 {
+  padding-bottom: 15px;
+}
+section .top-content .left-content p {
+  font-weight: lighter;
+}
+section .top-content .left-content button {
+  border-radius: 5px;
+  background-color: #F5A623;
+  font-size: 1.6rem;
+  color: #151515;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 2px solid #151515;
+}
+section .top-content .left-content button:hover {
+  background-color: #151515;
+  color: #E0E5E9;
+  border: 2px solid #F5A623;
+}
+section .top-content .right-content {
+  width: 40%;
+  align-items: baseline;
+}
+@media (max-width: 500px) {
+  section .top-content .right-content {
+    width: 100%;
+  }
+}
+section .top-content .right-content .content-image {
+  width: 100%;
+  align-self: center;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .cards-container {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+.cards-container .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  max-width: 30%;
+  margin-bottom: 16px;
+}
+@media (max-width: 500px) {
+  .cards-container .card {
+    max-width: 92%;
+    padding: 20px 0;
+    margin: 0 4%;
+    flex-direction: column;
+  }
+}
+.cards-container .card .img-container {
+  max-width: 100%;
+}
+.cards-container .card .author {
+  margin-top: 15px;
+}
+.cards-container .card .author .author {
+  padding: 10px 0;
+}
+.cards-container .card .author span {
+  padding: 20px 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
 .container-signin {
   max-width: 50%;
   margin: 0 auto;
@@ -299,4 +401,59 @@ header .nav-toggle .navigation .register button:hover {
 .container-signin input[type="password"] {
   background-color: #BEBEBE;
   border: #BEBEBE;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 47px;
+}
+@media (max-width: 500px) {
+  .tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 92%;
+    margin: 2% 4%;
+  }
+}
+.tabs .topics {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .tabs .topics {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 60px 0 20px 0;
+  }
+}
+.tabs .topics .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .topics .tab {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #151515;
+  background-color: #676D85;
+  margin: 5px 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .topics .tab:hover {
+  text-decoration: underline;
+}
+.tabs .topics .active-tab {
+  background-color: #F5A623;
+  color: #151515;
 }
