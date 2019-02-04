@@ -3,18 +3,36 @@ section {
   .artist-profile {
     display: flex;
     flex-direction: row;
+    @media @phone {
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 20px;
+    }
     .artist-details {
       display: flex;
       flex-direction: column;
       width: 30%;
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        padding-bottom: 20px;
+      }
       img {
         max-width: 100%;
         border-radius: 50%;
         padding: 20px 0;
+        @media @phone {
+          width: 50%;
+        }
       }
       p {
         font-size: 1.2rem;
         padding: 10px 0;
+        @media @phone {
+          text-align: center;
+          padding: 10px 20px;
+        }
       }
       a {
         background: @input-box-lightpurple;
@@ -32,6 +50,10 @@ section {
       border: 2px solid @input-box-lightpurple;
       border-radius: 10px;
       margin-left: 20px;
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
       h3 {
         padding: 20px;
         font-size: 2.2rem;
@@ -108,6 +130,11 @@ section .middle-content {
       grid-template-columns: repeat(auto-fill, 110px);
       grid-auto-rows: 110px;
       grid-auto-flow: dense;
+      @media @phone {
+        margin: 50px 20px;
+        display: flex;
+        flex-direction: column;
+      }
     }
     
     .card {
@@ -115,6 +142,12 @@ section .middle-content {
       display: grid;
       grid-template-columns: 1;
       grid-template-rows: 1;
+      @media @phone {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction:column;
+      }
     }
     
     .card img {
