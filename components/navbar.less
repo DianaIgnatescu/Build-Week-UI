@@ -75,7 +75,7 @@ header {
       
       .transition(left 0.5s ease);
       background: @input-box-lightpurple;
-      color: @nav-color;
+      // color: @nav-color;
       cursor: pointer;
       font-size: 2.6rem;
       line-height: 2.6;
@@ -87,7 +87,10 @@ header {
       top: 0;
       width: @nav-width;
       z-index: @z-nav;
-      &.expanded { left: 0; }
+      &.expanded { 
+        left: 0;
+        padding-left: 30px;
+       }
   
       ul {
         .center-vertically;
@@ -95,6 +98,7 @@ header {
 
       ul li {
         border-bottom: 1px solid @light-text-lightgrey;
+        margin-left: 20px;
       }
       ul a {
         
