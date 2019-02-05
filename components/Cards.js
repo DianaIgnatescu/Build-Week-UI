@@ -6,7 +6,6 @@ const overlayImage = overlay.querySelector('img');
 const overlayClose = overlay.querySelector('.close');
 
 function showOverlay(event) {
-  console.log('clicked');
   const src = event.currentTarget.querySelector('img').src;
   overlayImage.src = src;
   overlay.classList.add('open');
@@ -17,7 +16,6 @@ function close() {
 }
 
 const cards = document.querySelectorAll('.card');
-console.log(cards);
 
 cards.forEach(card => card.addEventListener('click', showOverlay));
 

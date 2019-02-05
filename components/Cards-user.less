@@ -130,6 +130,12 @@ section .middle-content {
       grid-template-columns: repeat(auto-fill, 110px);
       grid-auto-rows: 110px;
       grid-auto-flow: dense;
+      
+      @media @tablet {
+        margin: 50px 20px;
+        grid-template-columns: repeat(auto-fill, 132px);
+      }
+
       @media @phone {
         margin: 50px 20px;
         grid-template-columns: repeat(auto-fill, 125px);
@@ -143,6 +149,10 @@ section .middle-content {
       display: grid;
       grid-template-columns: 1;
       grid-template-rows: 1;
+      @media @tablet {
+        max-width: 100%;
+        grid-template-columns: 2;
+      }
       @media @phone {
         max-width: 100%;
       }
@@ -194,8 +204,8 @@ section .middle-content {
       transform: translateY(0);
     }
     
-    .card.v1 {
-      grid-row: span 1;
+    .card.v5 {
+      grid-row: span 5;
     }
 
     .card.v2 {
@@ -236,6 +246,13 @@ section .middle-content {
     }
     .card.h4 {
       grid-column: span 4;
+ 
+      @media @tablet {
+        grid-column: span 5;
+      }
+      @media @phone {
+        grid-column: span 4;
+      }
     }
     
     
