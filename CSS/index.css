@@ -456,8 +456,7 @@ section .middle-content {
 @media (max-width: 500px) {
   .cards-container {
     margin: 50px 20px;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, 125px);
   }
 }
 .card {
@@ -469,9 +468,6 @@ section .middle-content {
 @media (max-width: 500px) {
   .card {
     max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
   }
 }
 .card img {
@@ -521,11 +517,26 @@ section .middle-content {
 .card.v2 {
   grid-row: span 2;
 }
+@media (max-width: 500px) {
+  .card.v2 {
+    grid-row: span 4;
+  }
+}
 .card.v3 {
   grid-row: span 3;
 }
+@media (max-width: 500px) {
+  .card.v3 {
+    grid-row: span 6;
+  }
+}
 .card.v4 {
   grid-row: span 4;
+}
+@media (max-width: 500px) {
+  .card.v4 {
+    grid-row: span 6;
+  }
 }
 .card.h1 {
   grid-column: span 1;
@@ -533,8 +544,18 @@ section .middle-content {
 .card.h2 {
   grid-column: span 2;
 }
+@media (max-width: 500px) {
+  .card.h2 {
+    grid-column: span 4;
+  }
+}
 .card.h3 {
   grid-column: span 3;
+}
+@media (max-width: 500px) {
+  .card.h3 {
+    grid-column: span 4;
+  }
 }
 .card.h4 {
   grid-column: span 4;
