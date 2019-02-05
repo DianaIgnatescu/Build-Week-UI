@@ -1,0 +1,78 @@
+header {
+  .nav-toggle {
+    background-color: @navbar-color;
+    padding: 1.5%;
+    
+    .navigation {
+      align-items: center;
+      @media @phone {
+        max-width: 92%;
+        margin: 0 4%;
+      }
+      .flex(@jc: space-between, @ai: none, @dir: row); 
+      .logo {
+        .flex(@jc: space-between, @ai: none, @dir: row);
+        .menu-button {
+          position: absolute;
+          left: 20px;
+          width: 32px;
+          cursor: pointer;
+        }
+        h1 {
+          padding-left: 60px;
+        }
+      }
+      
+      .register {
+        // padding: 0 20px;
+        .flex(@jc: space-between, @ai: baseline, @dir: row);
+        a {
+          font-size: 1.6rem;
+          color: @accent-color;
+          text-decoration: none;
+        }
+        h3 {
+          padding-right: 20px;
+        }
+        button {
+          #styling-mixins.btn-cta(5px; @accent-color; 1.6rem; @navbar-color; center);
+          padding: 5px 10px;
+          border: 2px solid @navbar-color;
+          &:hover {
+            #styling-mixins.btn-hover();
+          }
+        } 
+      }
+    }
+  }
+}
+
+.menu {
+  // display: none;
+  max-width: 30%;
+  height: 100vh;
+  padding: 10px 30px;
+  // background-color: @input-box-lightpurple;
+  background-image: linear-gradient(to right bottom, #676d85, #5c6077, #52536a, #47465c, #3d3a4f);
+  box-shadow: 0px 1px 10px 2px #202330;
+  border-radius: 0 5px 5px 0;
+  z-index: 2;
+
+  // #styling-mixins.border-radius();
+  @media @phone {
+    max-width: 100%;
+  }
+  .flex(@jc: none, @ai: none, @dir: column);
+  a {
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: @main-font-color;
+    text-decoration: none;
+    line-height: 4rem;
+    padding: 10px 0;
+    border-bottom: 1px solid @light-text-lightgrey;
+    &:hover {
+      color: @accent-color;
+    }
+  }
+}

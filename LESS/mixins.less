@@ -1,0 +1,30 @@
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}
+
+#styling-mixins {
+  .border-radius(@radius: 5px) {
+    border-radius:@radius;
+  }
+
+  .border-bottom-grey {
+    border-bottom: 1px solid @light-text-lightgrey;
+  }
+
+  .btn-cta(@radius; @background; @font-size; @color; @align) {
+    border-radius: @radius;
+    background-color: @background;
+    font-size: @font-size;
+    color: @color;
+    text-align: @align;
+  }
+
+  .btn-hover() {
+    background-color: @navbar-color;
+    color: @main-font-color;
+    border: 2px solid @accent-color;
+  }
+}

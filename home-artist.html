@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Art Portolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="./components/Tabs.js" async></script>
+  <script src="./components/Cards.js" async></script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-toggle">
+      <!-- <div class="nav-toggle-bar"></div> -->
+      <div class="navigation">
+        <div class="logo">
+          <img class="menu-button" src="assets/hamburger5.png">
+          <h1>Art Portolio</h1>
+        </div>
+        <div class="register"> 
+          <a href="./login.html">Sign In</h3>
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./home-artist.html">Create</a>
+    <a href="./contact.html">Contact</a>
+  </div>
+
+  <section class="container">
+    <section class="artist-profile">
+      <div class="artist-details">
+        <img src="assets/michael-dam-258165-unsplash.jpg">
+        <h2>Andrea Blahblah</h2>
+        <p>“There is one thing the photograph must contain, the humanity of the moment.”</p>
+        <p>425 Followers</p>
+        <a href="#">Follow</a>
+        </div>
+      <div class="create-a-post">
+        <h3>Share your work</h3>
+        <form class="post-container">
+
+            <div class="title">
+              <label><input type="text" placeholder="Title your post"></label>
+            </div>
+            <div class="description">
+              <!-- <label><input type="message" placeholder="Add a description"></label> -->
+              <textarea placeholder="Add a description"></textarea>
+            </div>
+           <div class="upload-section">
+             <!-- <a href="#">Choose file<span>No file chosen</span></a> -->
+             <label><input type="file"></label>
+           </div>
+           <a href="#">Share Post</a>
+          </form>
+        <img class="content-image" src="/assets/undraw_uploading_go67.svg">
+      </div>
+    </section>
+
+    
+    <section class="middle-content">
+      
+      <!-- TABS COMPONENT -->
+      <div class="tabs">
+        <div class="topics">
+          <span class="title">EXPLORE:</span>
+          <div data-tab="all" class="tab active-tab">ALL</div>
+          <div data-tab="nature" class="tab">NATURE</div>
+          <!-- <div data-tab="architecture" class="tab">ARCHITECTURE</div> -->
+          <div data-tab="food" class="tab">FOOD</div>
+          <div data-tab="people" class="tab">PEOPLE</div>
+          <div data-tab="travel" class="tab">TRAVEL</div>
+          <div data-tab="animals" class="tab">ANIMALS</div>
+          <div data-tab="culture" class="tab">CULTURE</div>
+          <div data-tab="fashion" class="tab">FASHION</div>
+        </div>
+      </div>
+
+      <!-- CARDS OVERLAY -->
+      <div class="overlay">
+        <div class="overlay-inner">
+          <button class="close">✕</button>
+          <img>
+        </div>
+      </div>
+
+      <!-- CARDS COMPONENT -->
+      <div class="cards-container">
+
+          <div class="card v2 h3" data-tab="nature">
+            <img class="img-container" src="assets/images/nature/53.jpg">
+            <div class="card-overlay">
+              <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+              <p class="upvote">152 Likes</p>
+              <button>View</button>
+              <h4>By Andrea Blahblah</h4>
+            </div>
+          </div>
+      
+          <div class="card v4 h2" data-tab="architecture">
+            <img class="img-container" src="assets/images/architecture/14.jpg">
+            <div class="card-overlay">
+              <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+              <p class="upvote">152 Likes</p>
+              <button>View</button>
+              <h4>By Andrea Blahblah</h4>
+            </div>
+          </div>
+
+          <div class="card v2 h3" data-tab="fashion">
+            <img class="img-container" src="assets/images/people/71.jpg">
+            <div class="card-overlay">
+                <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+                <p class="upvote">152 Likes</p>
+                <button>View</button>
+                <h4>By Andrea Blahblah</h4>
+              </div>
+          </div>
+
+          <div class="card v4 h3" data-tab="travel">
+              <img class="img-container" src="assets/images/travel/60.jpg">
+              <div class="card-overlay">
+                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+                  <p class="upvote">152 Likes</p>
+                  <button>View</button>
+                  <h4>By Andrea Blahblah</h4>
+                </div>
+          </div>
+
+          <div class="card v3 h3" data-tab="food">
+              <img class="img-container" src="assets/images/food/39.jpg">
+              <div class="card-overlay">
+                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+                  <p class="upvote">152 Likes</p>
+                  <button>View</button>
+                  <h4>By Andrea Blahblah</h4>
+                </div>
+          </div>
+
+          <div class="card v4 h3" data-tab="animals">
+              <img class="img-container" src="assets/images/animals/1.jpg">
+              <div class="card-overlay">
+                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+                  <p class="upvote">152 Likes</p>
+                  <button>View</button>
+                  <h4>By Andrea Blahblah</h4>
+                </div>
+          </div>
+
+          <div class="card v3 h2" data-tab="fashion">
+              <img class="img-container" src="assets/images/fashion/29.jpg">
+              <div class="card-overlay">
+                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+                  <p class="upvote">152 Likes</p>
+                  <button>View</button>
+                  <h4>By Andrea Blahblah</h4>
+                </div>
+          </div>
+      
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="about-footer">
+          <h3>Art Portolio</h3>
+          <p>We are aenean vulputate nisl arcu, non consequat risus vulputate sed. Nulla eu sapien condimentum nisi aliquet sodales non et diam. Duis blandit nunc semper rutrum congue. Phasellus sed lacus ut odio vehicula varius. Etiam iaculis feugiat tortor ac ornare.great design.</p>
+          <div class="footer-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div> 
+        </div>
+        <div class="contact-footer">
+          <h3>Say hello to us</h3>
+          <p><i class="fas fa-map-marked"></i>County, Street name - number</p>
+          <p><i class="fas fa-envelope"></i>hello@artportolio.com</p>
+          <p><i class="fas fa-phone-square"></i></i>032 267 899 442</p>
+        </div>
+      </div>
+      <p class="copyright">©Copyright. All Rights Reserved</p>
+    </footer>
+  </section>
+</body>
+</html>

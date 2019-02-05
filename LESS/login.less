@@ -1,0 +1,42 @@
+.container-signin {
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  background-color: #3D3A4F;
+  box-shadow: 0px 1px 10px 2px @navbar-color;
+  h2 {
+    margin-top: 40px;
+    padding: 60px 0 20px 0;
+    font-size: 3.2rem;
+    font-weight: normal;
+    text-align: center;
+    color: @accent-color;
+    text-decoration-line: none;
+  }
+  form {
+    padding: 25px;
+    p {
+      padding: 15px;
+      margin: 0 20px;
+      color: @input-box-lightpurple;
+      text-decoration: none;
+    }
+    input {
+      display: block;
+      border-radius: 10px;
+      width: 100%;
+      border-width: 1px;
+      border-style: solid;
+      padding: 16px;
+      outline: 0;
+      font-family: inherit;
+      font-size: 0.95em;
+    }
+  }
+}
+
+.container-signin input[type="email"],
+.container-signin input[type="password"] {
+  background-color: @light-text-lightgrey;
+  border: @light-text-lightgrey;
+}
