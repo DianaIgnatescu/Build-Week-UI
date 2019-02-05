@@ -1,16 +1,9 @@
-(function() {
-	const hamburger = {
-		menuToggle: document.querySelector('.menu-toggle'),
-		menu: document.querySelector('.menu'),
+const toggleMenu = (menu) => {
+  menuToggle.classList.toggle('expanded');
+  menu.classList.toggle('expanded');
+};
 
-		showMenu: function(e) {
-			e.preventDefault();
-			this.menuToggle.classList.toggle('expanded');
-			this.menu.classList.toggle('expanded');
-		}
-	};
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
 
-	hamburger.menuToggle.addEventListener('click', function(e) { hamburger.showMenu(e); });
-
-}());
-
+menuToggle.addEventListener('click', () => toggleMenu(menu));
