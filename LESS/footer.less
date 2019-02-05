@@ -1,6 +1,4 @@
 footer {
-  max-width: 880px;
-  margin: 0 auto;
   .footer {
     display: flex;
     flex-direction: row;
@@ -8,32 +6,61 @@ footer {
     margin-bottom: 20px;
     border-top: 1px solid @input-box-lightpurple;
     border-bottom: 1px solid @input-box-lightpurple;
-    padding: 30px 0;
+    padding: 30px 20px;
+    @media @phone {
+      flex-direction: column;
+    }
     .about-footer {
       max-width: 65%;
+      @media @phone {
+        max-width: 100%;
+      }
       h3 {
         padding: 20px 0;
       }
       p{
         color: @light-text-lightgrey;
       }
+      .footer-icons {
+        .fab {
+          padding: 20px 10px 20px 0;
+          font-size: 2.6rem;
+          color: @input-box-lightpurple;
+          @media @phone {
+            padding-left: 0;
+          }
+          &:hover {
+            color: @accent-color;
+            transition: 0.5s ease;
+          }
+        }
+      }
     }
     .contact-footer {
      max-width: 35%;
-    h3 {
-      padding: 20px 0;
+     @media @phone {
+      max-width: 100%;
+      padding-top: 30px;
       }
-    p {
-      color: @light-text-lightgrey;
-      .fas {
-        padding: 10px;
+      h3 {
+        padding: 20px 0;
+        }
+      p {
+        color: @light-text-lightgrey;
+        .fas {
+          padding: 10px 10px 20px 0;
+          font-size: 2.6rem;
+          color: @input-box-lightpurple;
+          @media @phone {
+            padding-left: 0;
+          }
+        }
       }
-    }
     }
   }
   .copyright {
     text-align: center;
     color: @input-box-lightpurple;
-    padding: 20px 0;
+    padding: 20px 0 40px 0;
   }
 }
