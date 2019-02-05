@@ -9,7 +9,7 @@ function showOverlay(event) {
   const src = event.currentTarget.querySelector('img').src;
   overlayImage.src = src;
   overlay.classList.add('open');
-}
+} 
 
 function close() {
   overlay.classList.remove('open');

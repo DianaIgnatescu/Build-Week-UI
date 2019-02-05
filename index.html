@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+  <script src="./js/index.js" async></script>
   <script src="./components/Tabs.js" async></script>
   <script src="./components/Cards.js" async></script>
   <script src="./components/navbar.js" async></script>
@@ -82,208 +85,231 @@
       <div class="cards-container">
 
           <div class="card v4 h4" data-tab="nature">
-            <img class="img-container" src="assets/images/nature/53-1.jpg">
+            <img class="img-container lazyload" src="assets/images/nature/53-1.jpg">
             <div class="card-overlay">
               <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
               <div class="upvote">152 Likes</div>
+              <button>View</button>
               <span>By Andrea Blahblah</span>
             </div>
           </div>
       
           <div class="card v5 h4" data-tab="culture">
-            <img class="img-container" src="assets/images/arts and culture/14-1.jpg">
+            <img class="img-container lazyload" src="assets/images/arts and culture/14-1.jpg">
             <div class="card-overlay">
               <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
               <div class="upvote">82 Likes</div>
+              <button>View</button>
               <span>By Lucas Scott</span>
             </div>
           </div>
 
           <div class="card v4 h4" data-tab="people">
-            <img class="img-container" src="assets/images/people/71-1.jpg">
+            <img class="img-container lazyload" src="assets/images/people/71-1.jpg">
             <div class="card-overlay">
               <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
               <div class="upvote">37 Likes</div>
+              <button>View</button>
               <span>By Andrea Blahblah</span>
             </div>
           </div>
 
           <div class="card v5 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/60-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/60-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">42 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v4 h4" data-tab="culture">
-              <img class="img-container" src="assets/images/arts and culture/17-1.jpg">
+              <img class="img-container lazyload" src="assets/images/arts and culture/17-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v4 h4" data-tab="food">
-              <img class="img-container" src="assets/images/food/39-1.jpg">
+              <img class="img-container lazyload" src="assets/images/food/39-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">60 Likes</div>
+                <button>View</button>
                 <span>By Isabelle Markos</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="culture">
-              <img class="img-container" src="assets/images/arts and culture/19-1.jpg">
+              <img class="img-container lazyload" src="assets/images/arts and culture/19-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/1-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/1-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">42 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="food">
-              <img class="img-container" src="assets/images/food/41-1.jpg">
+              <img class="img-container lazyload" src="assets/images/food/41-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="culture">
-              <img class="img-container" src="assets/images/arts and culture/20-1.jpg">
+              <img class="img-container lazyload" data-src="assets/images/arts and culture/20-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/29-1.jpg">
+              <img class="img-container lazyload" src="assets/images/fashion/29-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">94 Likes</div>
+                <button>View</button>
                 <span>By Georgia Price</span>
               </div>
           </div>
 
           <div class="card v4 h4" data-tab="nature">
-              <img class="img-container" src="assets/images/nature/54-1.jpg">
+              <img class="img-container lazyload" src="assets/images/nature/54-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="food">
-              <img class="img-container" src="assets/images/food/42-1.jpg">
+              <img class="img-container lazyload" src="assets/images/food/42-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="culture">
-              <img class="img-container" src="assets/images/arts and culture/21-1.jpg">
+              <img class="img-container lazyload" src="assets/images/arts and culture/21-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/30-1.jpg">
+              <img class="img-container lazyload" src="assets/images/fashion/30-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/62-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/62-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/2-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/2-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="nature">
-              <img class="img-container" src="assets/images/nature/56-1.jpg">
+              <img class="img-container lazyload" src="assets/images/nature/56-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/31-1.jpg">
+              <img class="img-container lazyload" src="assets/images/fashion/31-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/63-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/63-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/3-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/3-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="culture">
-              <img class="img-container" src="assets/images/arts and culture/22-1.jpg">
+              <img class="img-container lazyload" src="assets/images/arts and culture/22-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/32-1.jpg">
+              <img class="img-container lazyload" src="assets/images/fashion/32-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
@@ -298,142 +324,154 @@
           </div> -->
 
           <div class="card v3 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/64-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/64-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/4-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/4-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="food">
-              <img class="img-container" src="assets/images/food/48-1.jpg">
+              <img class="img-container lazyload" src="assets/images/food/48-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="culture">
-              <img class="img-container" src="assets/images/arts and culture/23-1.jpg">
+              <img class="img-container lazyload" src="assets/images/arts and culture/23-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/61-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/61-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/34-1.jpg">
+              <img class="img-container lazyload" src="assets/images/fashion/34-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/5-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/5-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v4 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/60-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/60-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v4 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/6-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/6-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/35-1.jpg">
+              <img class="img-container lazyload" src="assets/images/fashion/35-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/68-1.jpg">
+              <img class="img-container lazyload" src="assets/images/travel/68-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v5 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/7-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/7-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/8-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/8-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v4 h4" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/9-1.jpg">
+              <img class="img-container lazyload" src="assets/images/animals/9-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
 
           <div class="card v3 h4" data-tab="food">
-              <img class="img-container" src="assets/images/food/51-1.jpg">
+              <img class="img-container lazyload" src="assets/images/food/51-1.jpg">
               <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <div class="upvote">152 Likes</div>
+                <button>View</button>
                 <span>By Andrea Blahblah</span>
               </div>
           </div>
-
-
-      
         </div>
     </section>
 
@@ -447,7 +485,7 @@
       </div>
 
       <div class="info">
-        <img src="assets/inc-500-seeklogo.com.svg">
+        <img src="assets/inc-500-seeklogo.com.svg" class="lazyload">
         <div class="info-right">
           <h3>One of the 5,000 fastest-growing private companies in America</h3>
           <p>Shoreditch ugh lo-fi unicorn gastropub food truck jianbing trust fund cray williamsburg bushwick poke. Slow-carb street art humblebrag copper mug hoodie, 90's coloring book kickstarter distillery taxidermy enamel pin pabst seitan. Williamsburg yr distillery, pork belly locavore stumptown squid next level intelligentsia readymade pickled shoreditch. Brooklyn slow-carb asymmetrical vape crucifix bicycle rights fingerstache truffaut la croix synth.</p>

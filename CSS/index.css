@@ -1114,3 +1114,7 @@ section .middle-content {
 .overlay img {
   width: 100%;
 }
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
