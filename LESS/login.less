@@ -1,14 +1,32 @@
 
 .container-signin {
-  max-width: 50%;
-  margin: 40px auto;
+  max-width: 100%;
+  height: 100vh;
   font-size: 1.6rem;
-  padding: 80px 0;
-  background: -webkit-linear-gradient(-45deg, rgba(61,58,79,1) 1%,rgba(32,35,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  padding-top: 40px;
+  @media @phone {
+    padding: 0;
+  }
+  // background: -webkit-linear-gradient(-45deg, rgba(61,58,79,1) 1%,rgba(32,35,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
   // background-color: #3D3A4F;
-  box-shadow: 0px 1px 10px 2px @navbar-color;
+  // box-shadow: 0px 1px 10px 2px @navbar-color;
+
+  .signin-box{
+    max-width: 450px;
+    background: -webkit-linear-gradient(-45deg, rgba(61,58,79,1) 1%,rgba(32,35,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    margin: 0 auto;
+    box-shadow: 0px 1px 10px 2px @navbar-color;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    @media @phone {
+      max-width: 100%;
+      box-shadow: none;
+    }
+  }
+
   h2 {
-    margin-top: 40px;
+    // margin-top: 40px;
     padding: 60px 0 20px 0;
     font-size: 3.2rem;
     font-weight: normal;
@@ -18,11 +36,42 @@
   }
   form {
     padding: 25px;
+    .center-text {
+      border-bottom: 1px solid@input-box-lightpurple;
+    }
     p {
-      padding: 15px;
-      margin: 0 20px;
+      padding: 15px 0;
+      margin: 0 18px;
       color: @input-box-lightpurple;
       text-decoration: none;
+      
+    }
+    p.center-text {
+      text-align: center;
+      padding-top: 0;
+      margin: 30px 0;
+      border-bottom: 1 px solid @input-box-lightpurple;
+    }
+    button {
+      border-radius: 5px;
+      padding: 10px 20px;
+      background: @input-box-lightpurple;
+      color: @light-text-lightgrey;
+      text-decoration: none;
+      border: none;
+      font-family: Raleway;
+      font-size: 1.5rem;
+      box-shadow: 0px 1px 10px 2px @navbar-color;
+      &:hover {
+        background: @accent-color;
+        transition: 1s ease;
+        color: @navbar-color;
+      }
+      @media @phone {
+        width: 100%;
+        padding: 20px;
+
+      }
     }
     input {
       display: block;
@@ -35,7 +84,31 @@
       font-family: inherit;
       font-size: 0.95em;
     }
-
+    .alternative-signin {
+      display: flex;
+      justify-content: space-between;
+      @media @phone {
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      button{
+        padding: 10px 20px;
+        width: 48%;
+        border-radius: 5px;
+        font-family: Raleway;
+        font-size: 1.5rem;
+        color: @input-box-lightpurple;
+        background: @light-text-lightgrey;
+        border: none;
+        margin: 20px 0 30px 0;
+        @media @phone {
+          padding: 20px;
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+    
   }
 }
 

@@ -314,6 +314,11 @@ section .top-content {
   margin: 20px 0;
   padding-bottom: 40px;
 }
+@media (max-width: 700px) {
+  section .top-content {
+    margin: 0 4%;
+  }
+}
 @media (max-width: 500px) {
   section .top-content {
     flex-direction: column;
@@ -457,6 +462,10 @@ section .artist-profile .artist-details img {
     width: 50%;
   }
 }
+section .artist-profile .artist-details h2 {
+  text-align: center;
+  font-size: 2.2rem;
+}
 section .artist-profile .artist-details p {
   font-size: 1.2rem;
   padding: 10px 0;
@@ -477,11 +486,16 @@ section .artist-profile .artist-details a {
   text-align: center;
   font-size: 1.4rem;
 }
+section .artist-profile .artist-details a:hover {
+  background: #F5A623;
+  transition: 1.2s ease;
+}
 section .artist-profile .create-a-post {
   width: 70%;
   border: 2px solid #676D85;
   border-radius: 10px;
-  margin-left: 20px;
+  margin-left: 15%;
+  margin-top: 60px;
 }
 @media (max-width: 500px) {
   section .artist-profile .create-a-post {
@@ -615,8 +629,8 @@ section .middle-content {
 .card:hover .card-overlay {
   transform: translateY(0);
 }
-.card.v1 {
-  grid-row: span 1;
+.card.v5 {
+  grid-row: span 5;
 }
 .card.v2 {
   grid-row: span 2;
@@ -664,6 +678,16 @@ section .middle-content {
 .card.h4 {
   grid-column: span 4;
 }
+@media (max-width: 700px) {
+  .card.h4 {
+    grid-column: span 5;
+  }
+}
+@media (max-width: 500px) {
+  .card.h4 {
+    grid-column: span 4;
+  }
+}
 .overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
@@ -688,16 +712,33 @@ section .middle-content {
   width: 100%;
 }
 .container-signin {
-  max-width: 50%;
-  margin: 40px auto;
+  max-width: 100%;
+  height: 100vh;
   font-size: 1.6rem;
-  padding: 80px 0;
+  padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .container-signin {
+    padding: 0;
+  }
+}
+.container-signin .signin-box {
+  max-width: 450px;
   background: -webkit-linear-gradient(-45deg, #3d3a4f 1%, #202330 100%);
   /* Chrome10-25,Safari5.1-6 */
+  margin: 0 auto;
   box-shadow: 0px 1px 10px 2px #151515;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .container-signin .signin-box {
+    max-width: 100%;
+    box-shadow: none;
+  }
 }
 .container-signin h2 {
-  margin-top: 40px;
   padding: 60px 0 20px 0;
   font-size: 3.2rem;
   font-weight: normal;
@@ -708,11 +749,42 @@ section .middle-content {
 .container-signin form {
   padding: 25px;
 }
+.container-signin form .center-text {
+  border-bottom: 1px solid #676D85;
+}
 .container-signin form p {
-  padding: 15px;
-  margin: 0 20px;
+  padding: 15px 0;
+  margin: 0 18px;
   color: #676D85;
   text-decoration: none;
+}
+.container-signin form p.center-text {
+  text-align: center;
+  padding-top: 0;
+  margin: 30px 0;
+  border-bottom: 1 px solid #676D85;
+}
+.container-signin form button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #676D85;
+  color: #BEBEBE;
+  text-decoration: none;
+  border: none;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  box-shadow: 0px 1px 10px 2px #151515;
+}
+.container-signin form button:hover {
+  background: #F5A623;
+  transition: 1s ease;
+  color: #151515;
+}
+@media (max-width: 500px) {
+  .container-signin form button {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .container-signin form input {
   display: block;
@@ -724,6 +796,34 @@ section .middle-content {
   outline: 0;
   font-family: inherit;
   font-size: 0.95em;
+}
+.container-signin form .alternative-signin {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container-signin form .alternative-signin {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+.container-signin form .alternative-signin button {
+  padding: 10px 20px;
+  width: 48%;
+  border-radius: 5px;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  color: #676D85;
+  background: #BEBEBE;
+  border: none;
+  margin: 20px 0 30px 0;
+}
+@media (max-width: 500px) {
+  .container-signin form .alternative-signin button {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .container-signin input[type="email"],
 .container-signin input[type="password"] {
