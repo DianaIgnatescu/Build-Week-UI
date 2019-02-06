@@ -18,6 +18,9 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+// ====LAZY LOAD IMAGES===== ///
+
 const lazy = () => {
   document.addEventListener('lazyloaded', (e) => {
     e.target.parentNode.classList.add('image-loaded');
@@ -29,3 +32,25 @@ const lazy = () => {
 };
 
 lazy();
+
+// ==== CHANGE BUTTON TO FOLLOWING ON CLICK === //
+
+// const following = document.getElementById('follow');
+// console.log(following);
+// following.addEventListener('click', () => {
+//   following.textContent = 'Following';
+// });
+
+
+const following = document.getElementById('follow');
+following.addEventListener('click', () => {
+  if (following.textContent === 'Following') {
+    following.textContent = 'Follow';
+    following.style.backgroundColor = '#676D85';
+    following.style.transition = '1s ease';
+  } else {
+    following.textContent = 'Following';
+    following.style.backgroundColor = '#F5A623';
+    following.style.transition = '1s ease';
+  }
+});
