@@ -689,9 +689,11 @@ section .middle-content {
 }
 .container-signin {
   max-width: 50%;
-  margin: 0 auto;
+  margin: 40px auto;
   font-size: 1.6rem;
-  background-color: #3D3A4F;
+  padding: 80px 0;
+  background: -webkit-linear-gradient(-45deg, #3d3a4f 1%, #202330 100%);
+  /* Chrome10-25,Safari5.1-6 */
   box-shadow: 0px 1px 10px 2px #151515;
 }
 .container-signin h2 {
