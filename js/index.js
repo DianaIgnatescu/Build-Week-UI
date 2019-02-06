@@ -53,3 +53,6 @@ switch (window.location.pathname) {
   default:
     break;
 }
+
+TweenMax.from('.signin-box', 4, { y: 500 });
+TweenMax.to('.signin-box', 4, { y: 0 });

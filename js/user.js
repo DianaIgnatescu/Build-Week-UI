@@ -16,9 +16,8 @@ following.addEventListener('click', () => {
 
 const showcase = document.querySelector('.profile');
 showcase.addEventListener('load', () => {
-  TweenMax.from('.profile', 1, { scale: 1.1});
-  TweenMax.to('.profile', 1, { scale: 1});
+  TweenMax.from('.profile', 1, { scale: 1.1 });
+  TweenMax.to('.profile', 1, { scale: 1 });
   showcase.style.boxShadow = '0px 1px 10px 2px #3D3A4F';
   showcase.style.cursor = 'pointer';
 });
-
