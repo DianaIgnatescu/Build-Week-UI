@@ -28,3 +28,27 @@
     border: 2px solid @accent-color;
   }
 }
+
+/* mixins */
+.box-sizing(@box-sizing: border-box) {
+	box-sizing: @box-sizing;
+}
+
+.center-vertically(@position: absolute) {
+	position: @position;
+  top: 50%;
+	transform: translateY(-50%);
+}
+
+.transform(@transform) {
+
+	transform: @transform;
+}
+
+.transition(@parameters: all 0.5s ease) {
+	transition: @parameters;
+}
+
+.ser-select {
+	user-select: none;
+}

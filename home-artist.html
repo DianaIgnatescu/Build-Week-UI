@@ -10,36 +10,38 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="./components/Tabs.js" async></script>
   <script src="./components/Cards.js" async></script>
+  <script src="./components/navbar.js" async></script>
 </head>
 <body>
 
   <header>
-    <div class="nav-toggle">
-      <!-- <div class="nav-toggle-bar"></div> -->
-      <div class="navigation">
-        <div class="logo">
-          <img class="menu-button" src="assets/hamburger5.png">
-          <h1>Art Portolio</h1>
-        </div>
-        <div class="register"> 
-          <a href="./login.html">Sign In</h3>
-          <button>Sign Up</button>
-        </div>
+      <!-- ========NAVIGATION BAR======== -->
+    <div class="navigation">
+      <div class="menu-toggle">
+        <div class="menu-toggle-bar"></div> 
       </div>
+      <h1>Art Portolio </h1>
+      <div class="register"> 
+        <a href="login.html">Sign In</a>
+        <button>Sign Up</button>
+      </div>
+    
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./home-artist.html">Create</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <div class="menu">
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./home-artist.html">Create</a>
-    <a href="./contact.html">Contact</a>
-  </div>
 
   <section class="container">
     <section class="artist-profile">
       <div class="artist-details">
-        <img src="assets/michael-dam-258165-unsplash.jpg">
+        <img src="assets/artist.jpg">
         <h2>Andrea Blahblah</h2>
         <p>“There is one thing the photograph must contain, the humanity of the moment.”</p>
         <p>425 Followers</p>
@@ -68,7 +70,7 @@
 
     
     <section class="middle-content">
-      
+
       <!-- TABS COMPONENT -->
       <div class="tabs">
         <div class="topics">
@@ -97,7 +99,7 @@
       <div class="cards-container">
 
           <div class="card v2 h3" data-tab="nature">
-            <img class="img-container" src="assets/images/nature/53.jpg">
+            <img class="img-container" src="assets/images/nature/53-1.jpg">
             <div class="card-overlay">
               <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
               <p class="upvote">152 Likes</p>
@@ -107,7 +109,7 @@
           </div>
       
           <div class="card v4 h2" data-tab="architecture">
-            <img class="img-container" src="assets/images/architecture/14.jpg">
+            <img class="img-container" src="assets/images/architecture/14-1.jpg">
             <div class="card-overlay">
               <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
               <p class="upvote">152 Likes</p>
@@ -116,8 +118,8 @@
             </div>
           </div>
 
-          <div class="card v2 h3" data-tab="fashion">
-            <img class="img-container" src="assets/images/people/71.jpg">
+          <div class="card v2 h3" data-tab="people">
+            <img class="img-container" src="assets/images/people/71-1.jpg">
             <div class="card-overlay">
                 <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                 <p class="upvote">152 Likes</p>
@@ -127,7 +129,7 @@
           </div>
 
           <div class="card v4 h3" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/60.jpg">
+              <img class="img-container" src="assets/images/travel/60-1.jpg">
               <div class="card-overlay">
                   <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                   <p class="upvote">152 Likes</p>
@@ -137,7 +139,7 @@
           </div>
 
           <div class="card v3 h3" data-tab="food">
-              <img class="img-container" src="assets/images/food/39.jpg">
+              <img class="img-container" src="assets/images/food/39-1.jpg">
               <div class="card-overlay">
                   <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                   <p class="upvote">152 Likes</p>
@@ -147,7 +149,7 @@
           </div>
 
           <div class="card v4 h3" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/1.jpg">
+              <img class="img-container" src="assets/images/animals/1-1.jpg">
               <div class="card-overlay">
                   <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                   <p class="upvote">152 Likes</p>
@@ -157,7 +159,7 @@
           </div>
 
           <div class="card v3 h2" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/29.jpg">
+              <img class="img-container" src="assets/images/fashion/29-1.jpg">
               <div class="card-overlay">
                   <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
                   <p class="upvote">152 Likes</p>

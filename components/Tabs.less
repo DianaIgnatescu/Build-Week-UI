@@ -20,6 +20,12 @@
       max-width: 100%;
       margin: 60px 0 20px 0;
     }
+    @media @tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 100%;
+      margin: 60px 20px 20px;
+    }
     .title {
       font-size: 12px;
       letter-spacing: 1px;
@@ -35,6 +41,12 @@
       letter-spacing: 2px;
       cursor: pointer;
       font-weight: bold;
+      @media @phone {
+        flex-wrap: wrap;
+      }
+      @media @tablet {
+        flex-wrap: wrap;
+      }
       
       &:hover {
         text-decoration: underline;
