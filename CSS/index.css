@@ -202,6 +202,7 @@ header .navigation h1 {
 @media (max-width: 500px) {
   header .navigation h1 {
     font-size: 2rem;
+    align-self: baseline;
   }
 }
 header .navigation .register {
@@ -322,7 +323,7 @@ section .top-content {
   justify-content: space-between;
   border-bottom: 1px solid #BEBEBE;
   margin: 20px 0;
-  padding-bottom: 40px;
+  padding: 90px 0 40px 0;
 }
 @media (max-width: 700px) {
   section .top-content {
@@ -436,6 +437,7 @@ section .bottom-content .info .info-right p {
   color: #676D85;
 }
 section {
+  padding-top: 50px;
   max-width: 880px;
 }
 section .artist-profile {
@@ -730,6 +732,7 @@ section .middle-content {
   max-width: 100%;
   font-size: 1.6rem;
   padding-top: 40px;
+  margin-bottom: 50px;
 }
 @media (max-width: 500px) {
   .container-signin {
@@ -740,11 +743,10 @@ section .middle-content {
   max-width: 450px;
   background: -webkit-linear-gradient(-45deg, #3d3a4f 1%, #202330 100%);
   /* Chrome10-25,Safari5.1-6 */
-  margin: 0 auto;
+  margin: 40px auto;
   box-shadow: 0px 1px 10px 2px #151515;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
 }
 @media (max-width: 500px) {
   .container-signin .signin-box {
@@ -918,6 +920,7 @@ section .middle-content {
   color: #151515;
 }
 .title-header {
+  padding-top: 60px;
   max-width: 100%;
 }
 .title-header .title-image {
@@ -929,7 +932,7 @@ section .middle-content {
 }
 .about-container .about-content {
   margin: 0 20px;
-  padding: 40px 0;
+  padding-bottom: 40px;
   border-bottom: 1px solid #676D85;
 }
 .about-container .about-content h2 {
@@ -983,9 +986,10 @@ section .middle-content {
 }
 .about-container .team {
   margin: 0 20px;
+  padding-top: 0;
 }
 .about-container .team h2 {
-  padding: 50px 0 30px 0;
+  padding: 50px 0 20px 0;
 }
 .about-container .team p {
   color: #BEBEBE;

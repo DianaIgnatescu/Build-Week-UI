@@ -8,5 +8,5 @@ const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', () => toggleMenu(menu));
 
-// TweenMax.from('.navigation', 2, { y: -50 });
-// TweenMax.to('.navigation', 2, { y: 0 });
+TweenMax.from('h1', 1, { y: -50 });
+TweenMax.to('h1', 1, { y: 0 });

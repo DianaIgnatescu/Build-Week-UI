@@ -33,24 +33,23 @@ const lazy = () => {
 
 lazy();
 
-// ==== CHANGE BUTTON TO FOLLOWING ON CLICK === //
+// =====ACTIVE PAGE=====//
 
-// const following = document.getElementById('follow');
-// console.log(following);
-// following.addEventListener('click', () => {
-//   following.textContent = 'Following';
-// });
+function underlineOnlyActiveElement(element) {
+  document.querySelectorAll('.menu li').forEach((menuLink) => {
+    menuLink.style.textDecoration = 'none';
+  });
+  element.style.textDecoration = 'underline';
+  element.style.color = 'orange';
+}
 
-
-const following = document.getElementById('follow');
-following.addEventListener('click', () => {
-  if (following.textContent === 'Following') {
-    following.textContent = 'Follow';
-    following.style.backgroundColor = '#676D85';
-    following.style.transition = '1s ease';
-  } else {
-    following.textContent = 'Following';
-    following.style.backgroundColor = '#F5A623';
-    following.style.transition = '1s ease';
-  }
-});
+switch (window.location.pathname) {
+  case '/home-artist.html':
+    underlineOnlyActiveElement(document.querySelector('.create'));
+    break;
+  case '/index.html':
+    underlineOnlyActiveElement(document.querySelector('.home'));
+    break;
+  default:
+    break;
+}
