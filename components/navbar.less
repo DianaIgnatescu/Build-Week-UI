@@ -1,7 +1,10 @@
 header {
-  background-color: none;
-  max-width: 100%;
-  margin: 0 20px;
+  background-color: @navbar-color;
+  width: 100vw;
+  padding: 0 20px;
+  position: fixed;
+  top: -5px;
+  z-index: 99;
   .navigation {
 
     height: 60px;
@@ -9,16 +12,22 @@ header {
     align-items: center;
     .flex(@jc: space-between, @ai: none, @dir: row); 
     @media @phone {
-      margin: 0 20px;
+      padding: 20px 0;
     }
     h1 {
       margin-left: 50px;
+      @media @phone {
+        font-size: 2rem;
+      }
     }
 
     //SIGN IN/UP BUTTONS
     
     .register {
       .flex(@jc: space-between, @ai: baseline, @dir: row);
+      @media @phone {
+        
+      }
       a {
         font-size: 1.6rem;
         color: @accent-color;
@@ -79,7 +88,7 @@ header {
       background: @input-box-lightpurple;
       // color: @nav-color;
       cursor: pointer;
-      font-size: 2.6rem;
+      font-size: 2rem;
       line-height: 2.6;
       height: 100vh;
       left: -@nav-width;
@@ -92,6 +101,7 @@ header {
       &.expanded { 
         left: 0;
         padding-left: 30px;
+        box-shadow: 0px 1px 10px 2px @navbar-color;
        }
   
       ul {
@@ -99,14 +109,17 @@ header {
       }
 
       ul li {
-        border-bottom: 1px solid @light-text-lightgrey;
-        margin-left: 20px;
+        // border-bottom: 1px solid @light-text-lightgrey;
+        width: 150px;
+        padding: 10px 0;
+        margin-left: 10px;
       }
       ul a {
         
         text-decoration: none;
+        text-transform: uppercase;
         color: @light-text-lightgrey;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
         &:hover {
           color: @accent-color;
           transition: 0.5s ease;
@@ -115,6 +128,127 @@ header {
     }
   }
 }
+
+
+
+
+// header {
+//   background-color: @navbar-color;
+//   max-width: 100%;
+//   padding: 0 20px;
+//   .navigation {
+
+//     height: 60px;
+//     margin: 0 auto;
+//     align-items: center;
+//     .flex(@jc: space-between, @ai: none, @dir: row); 
+//     @media @phone {
+//       margin: 0 20px;
+//     }
+//     h1 {
+//       margin-left: 50px;
+//     }
+
+//     //SIGN IN/UP BUTTONS
+    
+//     .register {
+//       .flex(@jc: space-between, @ai: baseline, @dir: row);
+//       a {
+//         font-size: 1.6rem;
+//         color: @accent-color;
+//         text-decoration: none;
+//         padding-right: 20px;
+//       }
+//       button {
+//         #styling-mixins.btn-cta(5px; @accent-color; 1.6rem; @navbar-color; center);
+//         padding: 5px 10px;
+//         border: 2px solid @navbar-color;
+//         &:hover {
+//           #styling-mixins.btn-hover();
+//         }
+//       } 
+//     }
+
+//     //HAMBURGER MENU
+
+//     .menu-toggle {
+//       user-select: none;
+//       cursor: pointer;
+//       height: 6 * @nav-toggle-bar-height;
+//       // left: 2rem;
+//       position: absolute;
+//       top: 2rem;
+//       width: @nav-toggle-bar-width;
+//       z-index: @z-nav-toggle;
+//       &:hover { opacity: 0.8; }
+  
+//       .menu-toggle-bar,
+//       .menu-toggle-bar::after,
+//       .menu-toggle-bar::before {
+//         .center-vertically(@position: absolute);
+//         .transition(all 0.5s ease);
+//         background: @light-text-lightgrey;
+//         content: '';
+//         height: @nav-toggle-bar-height;
+//         width: 100%;
+//       }
+//       .menu-toggle-bar { margin-top: 0; }
+//       .menu-toggle-bar::after { margin-top: 2 * @nav-toggle-bar-height; }
+//       .menu-toggle-bar::before { margin-top: -2 * @nav-toggle-bar-height; }
+//       &.expanded .menu-toggle-bar { background: transparent; }
+//       &.expanded .menu-toggle-bar::after,
+//       &.expanded .menu-toggle-bar::before {
+//         background: @light-text-lightgrey;
+//         margin-top: 0;
+//       }
+//       &.expanded .menu-toggle-bar::after { .transform(rotate(45deg)); }
+//       &.expanded .menu-toggle-bar::before { .transform(rotate(-45deg)); }
+//     }
+  
+//     //====MENU===//
+
+//     .menu {
+      
+//       .transition(left 0.5s ease);
+//       background: @input-box-lightpurple;
+//       // color: @nav-color;
+//       cursor: pointer;
+//       font-size: 2.6rem;
+//       line-height: 2.6;
+//       height: 100vh;
+//       left: -@nav-width;
+//       text-decoration: none;
+//       padding: 20px;
+//       position: fixed;
+//       top: 0;
+//       width: @nav-width;
+//       z-index: @z-nav;
+//       &.expanded { 
+//         left: 0;
+//         padding-left: 30px;
+//        }
+  
+//       ul {
+//         .center-vertically;
+//       }
+
+//       ul li {
+//         border-bottom: 1px solid @light-text-lightgrey;
+//         margin-left: 20px;
+//       }
+//       ul a {
+        
+//         text-decoration: none;
+//         color: @light-text-lightgrey;
+//         padding-bottom: 20px;
+//         &:hover {
+//           color: @accent-color;
+//           transition: 0.5s ease;
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 
