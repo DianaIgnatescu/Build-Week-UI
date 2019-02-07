@@ -596,12 +596,14 @@ section .artist-profile .create-a-post form input {
   outline: 0;
   font-family: inherit;
   font-size: 1.6rem;
+  color: #BEBEBE;
 }
 section .artist-profile .create-a-post form textarea {
   background: #3e3b4f;
   border: none;
   width: 100%;
   border-radius: 10px;
+  color: #BEBEBE;
   padding: 16px;
   font-size: 1.6rem;
   font-family: inherit;
