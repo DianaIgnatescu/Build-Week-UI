@@ -17,10 +17,15 @@ header {
       padding: 20px 0;
     }
 
+ 
     h1 {
       margin-left: 50px;
       @media @phone {
         font-size: 2rem;
+      }
+      @media(max-width: 370px) {
+        font-size: 1.3rem;
+        margin-left: 40px;
       }
     }
 
@@ -40,6 +45,7 @@ header {
         }
         @media @phone {
           font-size: 1.3rem;
+          padding-right: 5px;
         }
       }
 
@@ -55,6 +61,9 @@ header {
         }
         @media @phone {
           font-size: 1.3rem;
+        }
+        @media(max-width: 370px) {
+          padding: 3px 5px;
         }
       } 
     }

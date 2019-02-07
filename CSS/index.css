@@ -221,6 +221,12 @@ header .navigation h1 {
     font-size: 2rem;
   }
 }
+@media (max-width: 370px) {
+  header .navigation h1 {
+    font-size: 1.3rem;
+    margin-left: 40px;
+  }
+}
 header .navigation .register {
   display: flex;
   justify-content: space-between;
@@ -242,6 +248,7 @@ header .navigation .register a:hover {
 @media (max-width: 500px) {
   header .navigation .register a {
     font-size: 1.3rem;
+    padding-right: 5px;
   }
 }
 header .navigation .register button {
@@ -265,6 +272,11 @@ header .navigation .register button:hover {
 @media (max-width: 500px) {
   header .navigation .register button {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 370px) {
+  header .navigation .register button {
+    padding: 3px 5px;
   }
 }
 header .navigation .menu-toggle {
@@ -361,7 +373,7 @@ section .top-content {
   margin: 20px 0;
   padding: 90px 0 40px 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   section .top-content {
     margin: 0 4%;
   }
@@ -497,7 +509,7 @@ section .artist-profile {
   flex-direction: row;
   margin-top: 60px;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   section .artist-profile {
     padding: 0 20px;
   }
@@ -792,12 +804,17 @@ section .artist-profile .create-a-post img {
     margin: 60px 0 20px 0;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .tabs .topics {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;
     margin: 60px 20px 20px;
+  }
+}
+@media (max-width: 370px) {
+  .tabs .topics {
+    margin-bottom: 60px;
   }
 }
 .tabs .topics .title {
@@ -824,7 +841,7 @@ section .artist-profile .create-a-post img {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .tabs .topics .tab {
     flex-wrap: wrap;
   }
@@ -1032,7 +1049,7 @@ section .middle-content {
   grid-auto-rows: 110px;
   grid-auto-flow: dense;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .cards-container {
     margin: 50px 20px;
     grid-template-columns: repeat(auto-fill, 132px);
@@ -1050,7 +1067,7 @@ section .middle-content {
   grid-template-columns: 1;
   grid-template-rows: 1;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .card {
     max-width: 100%;
     grid-template-columns: 2;
@@ -1132,7 +1149,7 @@ section .middle-content {
 .card.h4 {
   grid-column: span 4;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .card.h4 {
     grid-column: span 5;
   }
