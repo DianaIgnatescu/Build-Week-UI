@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Karla|Raleway:300" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="./components/navbar.js" async></script>
+  <script src="./js/login.js" async></script>
+
   <title>Art Portolio - Login</title>
 </head>
 <body>
@@ -44,15 +46,15 @@
       <h2>Art Portolio</h2>
 
       <form class="signin-container" action="./home-artist.html">
-        <p>Username or Email*</p>
-        <label><input type="email" placeholder="Email"></label>
-        <p>Password*</p>
-        <label><input type="password" placeholder="Password"></label>           
+        <p>Email</p>
+        <label><input type="email" placeholder="Email" required></label>
+        <p>Password</p>
+        <label><input type="password" placeholder="Password" required></label>           
         <p class="center-text">or sign in below </p>
 
         <div class="alternative-signin">
-          <button type="button">Twitter</button>
-          <button type="button">Facebook</button>
+          <button type="button" id="twitter">Twitter</button>
+          <button type="button" id="facebook">Facebook</button>
         </div>
         <button type="submit">Sign In</button>
       </form>

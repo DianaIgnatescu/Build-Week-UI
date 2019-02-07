@@ -1,10 +1,9 @@
-const cardsContainer = document.querySelector('.cards-container');
 const overlay = document.querySelector('.overlay');
 const overlayImage = overlay.querySelector('img');
 const overlayClose = overlay.querySelector('.close');
 
 function showOverlay(event) {
-  const src = event.currentTarget.querySelector('img').src;
+  const { src } = event.currentTarget.querySelector('img');
   overlayImage.src = src;
   overlay.classList.add('open');
 }
