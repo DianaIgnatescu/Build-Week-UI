@@ -30,7 +30,8 @@ section {
         #styling.btn-cta(5px; @accent-color; 1.6rem; @navbar-color; center);
         padding: 5px 10px;
         margin: 10px 0;
-        border: 2px solid @navbar-color;
+        color: @dark-text;
+        border: 2px solid @accent-color;
         &:hover {
           #styling.btn-hover();
           cursor: pointer;
@@ -58,6 +59,7 @@ section {
       padding: 0 20px;
       h3 {
         padding: 20px 0;
+        line-height: 1.5;
       }
       a {
         text-decoration: underline;
@@ -65,8 +67,15 @@ section {
         font-size: 1.6rem;
         color: @accent-color;
       }
+      p {
+        line-height: 1.5;
+        font-size: 1.8rem;
+        font-style: italic;
+      }
       span {
         font-size: 2rem;
+        padding-top: 10px;
+
       }
       .underline {
         font-size: 1.4rem;
