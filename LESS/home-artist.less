@@ -2,8 +2,9 @@ section {
   padding-top: 50px;
   max-width: 880px;
   .artist-profile {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
+    .flex(@jc: none, @ai: none, @dir: row);
     margin-top: 60px;
     @media @tablet {
       padding: 0 20px;
@@ -14,8 +15,7 @@ section {
       padding: 20px;
     }
     .artist-details {
-      display: flex;
-      flex-direction: column;
+      .flex(@jc: none, @ai: none, @dir: column);
       width: 30%;
       @media @phone {
         width: 100%;
@@ -53,17 +53,17 @@ section {
         padding: 5px 15px;
         text-align: center;
         font-size: 1.4rem;
-        #styling.font-karla;
+        #styling.font-karla();
         &:hover {
           background: @accent-color;
-          transition: 1s ease;
+          transition: @transition;
         }
       }
     }
     .create-a-post {
       width: 70%;
-      border: 2px solid @input-box-lightpurple;
-      border-radius: 5px;
+      border: 2px solid @light-purple;
+      border-radius: #styling.border-radius();
       margin-left: 15%;
       
       @media @phone {
@@ -82,8 +82,6 @@ section {
           display: block;
           border-radius: 5px;
           width: 100%;
-          border-width: 1px;
-          border-style: solid;
           padding: 16px;
           margin: 15px 0;
           outline: 0;
@@ -96,7 +94,7 @@ section {
           background: @input-color;
           border: none;
           width: 100%;
-          border-radius: 10px;
+          border-radius: 5px;
           color: @light-text;
           padding: 16px;
           font-size: 1.6rem;
@@ -109,13 +107,14 @@ section {
           text-decoration: none;
           font-size: 1.6rem;
           border-radius: 5px;
-          border: 2px solid @accent-color;
+          border: @border;
           color: @dark-text;
           margin: 15px 2px;
           &:hover {
             #styling.btn-hover();
-            transition: 0.5s ease;
-            cursor: pointer;
+            transition: @transition;
+            cursor: @cursor;
+            background: none;
           }
         }
       }

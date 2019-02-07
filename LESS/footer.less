@@ -1,8 +1,9 @@
 footer {
   .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    .flex(@jc: space-between, @ai: none, @dir: row);
     margin-bottom: 20px;
     border-top: 1px solid @light-purple;
     border-bottom: 1px solid @light-purple;
@@ -18,23 +19,26 @@ footer {
       h3 {
         padding: 20px 0;
         color: @accent-color;
+        font-weight: bold;
+        font-family: Karla, sans-serif;
+        font-size: 2.6rem;
       }
       p{
         color: @light-purple;
-        #styling.font-karla;
+        #styling.font-karla();
       }
       .footer-icons {
         .fab {
           padding: 20px 10px 20px 0;
           font-size: 2.6rem;
           color: @light-purple;
-          cursor: pointer;
+          cursor: @cursor;
           @media @phone {
             padding-left: 0;
           }
           &:hover {
             color: @accent-color;
-            transition: 0.5s ease;
+            transition: @transition;
           }
         }
       }
@@ -48,15 +52,18 @@ footer {
       h3 {
         padding: 20px 0;
         color: @accent-color;
+        font-family: Karla, sans-serif;
+        font-size: 2.2rem;
+        text-transform: capitalize;
         }
       p {
         color: @light-purple;
         font-size: 1.6rem;
-        #styling.font-karla;
+        #styling.font-karla();
         .fas {
           padding: 10px 10px 20px 0;
           font-size: 2.6rem;
-          color: @input-box-lightpurple;
+          color: @light-purple;
           @media @phone {
             padding-left: 0;
           }
@@ -65,7 +72,7 @@ footer {
           color: @accent-color;
           &:hover {
             text-decoration: underline;
-            cursor: pointer;
+            cursor: @cursor;
           }
         }
       }
@@ -73,7 +80,7 @@ footer {
   }
   .copyright {
     text-align: center;
-    color: @input-box-lightpurple;
+    color: @light-purple;
     padding: 20px 0 40px 0;
   }
 }

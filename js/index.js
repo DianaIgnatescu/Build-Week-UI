@@ -22,8 +22,10 @@ window.addEventListener('scroll', () => {
 const lazy = () => {
   document.addEventListener('lazyloaded', (e) => {
     e.target.parentNode.classList.add('image-loaded');
-    TweenMax.from(e.target, 2, { opacity: 0 });
-    TweenMax.to(e.target, 2, { opacity: 1 });
+    TweenMax.from(e.target, 1.5, { scale: 0 });
+    TweenMax.to(e.target, 1.5, { scale: 1 });
+    // TweenMax.from(e.target, 2, { opacity: 0 });
+    // TweenMax.to(e.target, 2, { opacity: 1 });
   });
 };
 

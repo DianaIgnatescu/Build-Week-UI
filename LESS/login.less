@@ -1,8 +1,6 @@
 
 .container-signin {
   max-width: 100%;
-  // height: 100vh;
-  // font-size: 1.6rem;
   padding-top: 40px;
   margin-bottom: 50px;
   @media @phone {
@@ -54,7 +52,7 @@
       background: none;
       transition: 0.5s ease;
       color: @light-text;
-      border: 2px solid @accent-color;
+      border: @border;
       font-weight: bold;
       text-decoration: none;
       
@@ -64,7 +62,7 @@
       &:hover {
         background: @accent-color;
         color: @dark-text;
-        border: 2px solid @accent-color;
+        border: @border;
       }
       @media @phone {
         width: 100%;
@@ -104,7 +102,7 @@
         }
         &:hover {
           background-color: @input-color;
-          transition: 0.5s ease;
+          transition: @transition;
         } 
       }
     } 

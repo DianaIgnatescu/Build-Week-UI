@@ -14,10 +14,13 @@
     margin: 0 20px;
 
     padding-bottom: 40px;
-    border-bottom: 1px solid @input-box-lightpurple;
+    border-bottom: 1px solid @light-purple;
     h2 {
+      font-weight: bold;
       padding: 60px 0 40px 0;
       color: @accent-color;
+      font-family: Karla, sans-serif;
+      font-size: 2.8rem;
     }
     p {
       padding-bottom: 20px;
@@ -27,11 +30,9 @@
   }
   .seo-icons {
     margin: 0 20px;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
+    .flex(@jc: space-between, @ai: none, @dir: row);
     padding: 40px 0;
-    border-bottom: 1px solid @input-box-lightpurple;
+    border-bottom: 1px solid @light-purple;
     @media @phone {
       flex-direction: column;
     }
@@ -56,11 +57,12 @@
       h3 {
         text-align: center;
         padding: 20px 0;
-        #styling.font-karla;
+        font-family: Karla, sans-serif;
         font-size: 1.8rem;
+        font-weight: bold;
       }
       p {
-        color: @light-text-lightgrey;
+        color: @light-text;
       }
     }
   }
@@ -71,9 +73,12 @@
     h2 {
       padding: 50px 0 20px 0;
       color: @accent-color;
+      font-weight: bold;
+      font-family: Karla, sans-serif;
+      font-size: 2.8rem;
     }
     p {
-      color: @light-text-lightgrey;
+      color: @light-grey;
     }
     img {
       max-width: 100%;
