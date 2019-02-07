@@ -10,6 +10,7 @@ following.addEventListener('click', () => {
     following.textContent = 'Following';
     following.style.backgroundColor = '#FBC441';
     following.style.transition = '1s ease';
+    following.style.color = "#3D3A4F";
   }
 });
 

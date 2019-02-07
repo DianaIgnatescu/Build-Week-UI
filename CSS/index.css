@@ -499,7 +499,7 @@ section .artist-profile .artist-details {
 @media (max-width: 500px) {
   section .artist-profile .artist-details {
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     align-items: center;
     padding-bottom: 20px;
   }
@@ -817,6 +817,7 @@ section .artist-profile .create-a-post img {
   color: #202330;
 }
 .title-header {
+  margin-top: 5px;
   padding-top: 50px;
   max-width: 100%;
 }
