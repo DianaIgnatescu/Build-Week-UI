@@ -1084,6 +1084,7 @@ section .middle-content {
 }
 .card-overlay p {
   font-size: 1.6rem;
+  color: white;
 }
 .card-overlay button {
   background: none;
