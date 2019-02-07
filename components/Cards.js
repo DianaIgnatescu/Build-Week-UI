@@ -4,6 +4,7 @@ const overlayClose = overlay.querySelector('.close');
 
 function showOverlay(event) {
   const { src } = event.currentTarget.querySelector('img');
+  overlayImage.src = src;
   overlay.classList.add('open');
 }
 
