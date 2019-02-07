@@ -26,8 +26,6 @@ const lazy = () => {
     e.target.parentNode.classList.add('image-loaded');
     TweenMax.from(e.target, 2, { opacity: 0 });
     TweenMax.to(e.target, 2, { opacity: 1 });
-    // e.target.parentNode.classList.remove('loading');
-    // e.target.parentNode.classList.remove(effect);
   });
 };
 
@@ -39,8 +37,7 @@ function underlineOnlyActiveElement(element) {
   document.querySelectorAll('.menu li').forEach((menuLink) => {
     menuLink.style.textDecoration = 'none';
   });
-  element.style.textDecoration = 'underline';
-  element.style.color = 'orange';
+  element.style.color = '#FBC441';
 }
 
 switch (window.location.pathname) {
@@ -50,9 +47,9 @@ switch (window.location.pathname) {
   case '/index.html':
     underlineOnlyActiveElement(document.querySelector('.home'));
     break;
+  case '/about.html':
+    underlineOnlyActiveElement(document.querySelector('.about'));
+    break;
   default:
     break;
 }
-
-TweenMax.from('.signin-box', 4, { y: 500 });
-TweenMax.to('.signin-box', 4, { y: 0 });

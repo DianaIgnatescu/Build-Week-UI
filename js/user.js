@@ -8,11 +8,10 @@ following.addEventListener('click', () => {
     following.style.transition = '1s ease';
   } else {
     following.textContent = 'Following';
-    following.style.backgroundColor = '#F5A623';
+    following.style.backgroundColor = '#FBC441';
     following.style.transition = '1s ease';
   }
 });
-
 
 const showcase = document.querySelector('.profile');
 showcase.addEventListener('load', () => {
