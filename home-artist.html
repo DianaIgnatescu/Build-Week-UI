@@ -6,8 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Art Portolio</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link href="CSS/index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+  <script src="./js/index.js" async></script>
+  <script src="./js/user.js" async></script>
   <script src="./components/Tabs.js" async></script>
   <script src="./components/Cards.js" async></script>
   <script src="./components/navbar.js" async></script>
@@ -15,7 +19,9 @@
 <body>
 
   <header>
+
       <!-- ========NAVIGATION BAR======== -->
+
     <div class="navigation">
       <div class="menu-toggle">
         <div class="menu-toggle-bar"></div> 
@@ -28,24 +34,23 @@
     
       <nav class="menu">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./home-artist.html">Create</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./index.html" class="nav-element home">Home</a></li>
+          <li><a href="./about.html" class="nav-element about">About</a></li>
+          <li><a href="./home-artist.html" class="nav-element create">Create</a></li>
+          <li><a href="./contact.html" class="nav-element contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-
+  
   <section class="container">
     <section class="artist-profile">
       <div class="artist-details">
-        <img src="assets/artist.jpg">
-        <h2>Andrea Blahblah</h2>
+        <img src="assets/artist.jpg" class="profile">
+        <h2>Andrea Jones</h2>
         <p>“There is one thing the photograph must contain, the humanity of the moment.”</p>
         <p>425 Followers</p>
-        <a href="#">Follow</a>
+        <a href="#" id="follow">Follow</a>
         </div>
       <div class="create-a-post">
         <h3>Share your work</h3>
@@ -55,11 +60,9 @@
               <label><input type="text" placeholder="Title your post"></label>
             </div>
             <div class="description">
-              <!-- <label><input type="message" placeholder="Add a description"></label> -->
               <textarea placeholder="Add a description"></textarea>
             </div>
            <div class="upload-section">
-             <!-- <a href="#">Choose file<span>No file chosen</span></a> -->
              <label><input type="file"></label>
            </div>
            <a href="#">Share Post</a>
@@ -67,17 +70,16 @@
         <img class="content-image" src="/assets/undraw_uploading_go67.svg">
       </div>
     </section>
-
-    
+ 
     <section class="middle-content">
 
       <!-- TABS COMPONENT -->
+
       <div class="tabs">
         <div class="topics">
           <span class="title">EXPLORE:</span>
           <div data-tab="all" class="tab active-tab">ALL</div>
           <div data-tab="nature" class="tab">NATURE</div>
-          <!-- <div data-tab="architecture" class="tab">ARCHITECTURE</div> -->
           <div data-tab="food" class="tab">FOOD</div>
           <div data-tab="people" class="tab">PEOPLE</div>
           <div data-tab="travel" class="tab">TRAVEL</div>
@@ -88,87 +90,93 @@
       </div>
 
       <!-- CARDS OVERLAY -->
+
       <div class="overlay">
         <div class="overlay-inner">
           <button class="close">✕</button>
           <img>
+          <div class="details">
+            <div class="upvote"><i class="fas fa-heart"></i>152 Likes</div>
+            <span>By Andrea Jones</span>
+          </div>
+          <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>         
         </div>
       </div>
 
       <!-- CARDS COMPONENT -->
+
       <div class="cards-container">
-
-          <div class="card v2 h3" data-tab="nature">
-            <img class="img-container" src="assets/images/nature/53-1.jpg">
-            <div class="card-overlay">
-              <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-              <p class="upvote">152 Likes</p>
-              <button>View</button>
-              <h4>By Andrea Blahblah</h4>
-            </div>
-          </div>
       
-          <div class="card v4 h2" data-tab="architecture">
-            <img class="img-container" src="assets/images/architecture/14-1.jpg">
-            <div class="card-overlay">
-              <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-              <p class="upvote">152 Likes</p>
-              <button>View</button>
-              <h4>By Andrea Blahblah</h4>
-            </div>
+        <div class="card v4 h4" data-tab="nature">
+          <img class="img-container lazyload" src="assets/images/nature/53-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <p class="upvote">152 Likes</p>
+            <button>View</button>
+            <h4>By Andrea Jones</h4>
           </div>
-
-          <div class="card v2 h3" data-tab="people">
-            <img class="img-container" src="assets/images/people/71-1.jpg">
-            <div class="card-overlay">
-                <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-                <p class="upvote">152 Likes</p>
-                <button>View</button>
-                <h4>By Andrea Blahblah</h4>
-              </div>
-          </div>
-
-          <div class="card v4 h3" data-tab="travel">
-              <img class="img-container" src="assets/images/travel/60-1.jpg">
-              <div class="card-overlay">
-                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-                  <p class="upvote">152 Likes</p>
-                  <button>View</button>
-                  <h4>By Andrea Blahblah</h4>
-                </div>
-          </div>
-
-          <div class="card v3 h3" data-tab="food">
-              <img class="img-container" src="assets/images/food/39-1.jpg">
-              <div class="card-overlay">
-                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-                  <p class="upvote">152 Likes</p>
-                  <button>View</button>
-                  <h4>By Andrea Blahblah</h4>
-                </div>
-          </div>
-
-          <div class="card v4 h3" data-tab="animals">
-              <img class="img-container" src="assets/images/animals/1-1.jpg">
-              <div class="card-overlay">
-                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-                  <p class="upvote">152 Likes</p>
-                  <button>View</button>
-                  <h4>By Andrea Blahblah</h4>
-                </div>
-          </div>
-
-          <div class="card v3 h2" data-tab="fashion">
-              <img class="img-container" src="assets/images/fashion/29-1.jpg">
-              <div class="card-overlay">
-                  <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
-                  <p class="upvote">152 Likes</p>
-                  <button>View</button>
-                  <h4>By Andrea Blahblah</h4>
-                </div>
-          </div>
-      
         </div>
+      
+        <div class="card v5 h4" data-tab="fashion">
+          <img class="img-container lazyload" src="assets/images/fashion/32-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <div class="upvote">152 Likes</div>
+            <button>View</button>
+            <span>By Andrea Jones</span>
+          </div>
+        </div>
+
+        <div class="card v3 h4" data-tab="people">
+          <img class="img-container lazyload" src="assets/images/people/71-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <p class="upvote">152 Likes</p>
+            <button>View</button>
+            <h4>By Andrea Jones</h4>
+          </div>
+        </div>
+
+        <div class="card v4 h4" data-tab="travel">
+          <img class="img-container lazyload" src="assets/images/travel/60-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <p class="upvote">152 Likes</p>
+            <button>View</button>
+            <h4>By Andrea Jones</h4>
+          </div>
+        </div>
+
+        <div class="card v3 h4" data-tab="food">
+          <img class="img-container lazyload" src="assets/images/food/39-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <p class="upvote">152 Likes</p>
+            <button>View</button>
+            <h4>By Andrea Jones</h4>
+          </div>
+        </div>
+
+        <div class="card v5 h4" data-tab="animals">
+          <img class="img-container lazyload" src="assets/images/animals/1-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <p class="upvote">152 Likes</p>
+            <button>View</button>
+            <h4>By Andrea Jones</h4>
+          </div>
+        </div>
+
+        <div class="card v5 h4" data-tab="fashion">
+          <img class="img-container lazyload" src="assets/images/fashion/29-1.jpg">
+          <div class="card-overlay">
+            <p>Selvage raclette hoodie succulents kogi fingerstache readymade viral you probably haven't heard of them. </p>
+            <p class="upvote">152 Likes</p>
+            <button>View</button>
+            <h4>By Andrea Jones</h4>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>

@@ -1,7 +1,12 @@
 header {
-  background-color: none;
-  max-width: 100%;
-  margin: 0 20px;
+
+  background-color: @navbar-color;
+  width: 100vw;
+  padding: 0 20px;
+  position: fixed;
+  top: -5px;
+  z-index: 99;
+
   .navigation {
 
     height: 60px;
@@ -9,104 +14,120 @@ header {
     align-items: center;
     .flex(@jc: space-between, @ai: none, @dir: row); 
     @media @phone {
-      margin: 0 20px;
-    }
-    h1 {
-      margin-left: 50px;
+      padding: 20px 0;
     }
 
-    //SIGN IN/UP BUTTONS
+    h1 {
+      margin-left: 50px;
+      @media @phone {
+        font-size: 2rem;
+      }
+    }
+
+    // == SIGN IN/UP BUTTONS == //
     
     .register {
-      .flex(@jc: space-between, @ai: baseline, @dir: row);
+      .flex(space-between, baseline, row);
+
       a {
-        font-size: 1.6rem;
-        color: @accent-color;
+        #styling.font-karla;
+        color: @light-grey;
         text-decoration: none;
         padding-right: 20px;
-      }
-      button {
-        #styling-mixins.btn-cta(5px; @accent-color; 1.6rem; @navbar-color; center);
-        padding: 5px 10px;
-        border: 2px solid @navbar-color;
         &:hover {
-          #styling-mixins.btn-hover();
+          color: @accent-color;
+          transition: 0.5s ease;
+        }
+      }
+
+      button {
+        #styling.font-karla;
+        #styling.btn-cta(5px; @accent-color; 1.6rem; @dark-text; center);
+        padding: 3px 10px;
+        border: 2px solid @accent-color;
+        &:hover {
+          #styling.btn-hover();
+          transition: 0.5s ease;
+          cursor: pointer;
         }
       } 
     }
 
-    //HAMBURGER MENU
+    // == EXPAND MENU == //
 
     .menu-toggle {
       user-select: none;
       cursor: pointer;
-      height: 6 * @nav-toggle-bar-height;
+      height: 2.1rem;
       // left: 2rem;
       position: absolute;
       top: 2rem;
-      width: @nav-toggle-bar-width;
-      z-index: @z-nav-toggle;
-      &:hover { opacity: 0.8; }
+      width: 3.4rem;
+      z-index: 3;
+      &:hover { 
+        opacity: 0.8; 
+      }
   
       .menu-toggle-bar,
       .menu-toggle-bar::after,
       .menu-toggle-bar::before {
-        .center-vertically(@position: absolute);
+        .center-menu(@position: absolute);
         .transition(all 0.5s ease);
-        background: @light-text-lightgrey;
+        background: @light-grey;
         content: '';
-        height: @nav-toggle-bar-height;
+        height: @bar-height;
         width: 100%;
       }
       .menu-toggle-bar { margin-top: 0; }
-      .menu-toggle-bar::after { margin-top: 2 * @nav-toggle-bar-height; }
-      .menu-toggle-bar::before { margin-top: -2 * @nav-toggle-bar-height; }
+      .menu-toggle-bar::after { margin-top: 2 * @bar-height; }
+      .menu-toggle-bar::before { margin-top: -2 * @bar-height; }
       &.expanded .menu-toggle-bar { background: transparent; }
       &.expanded .menu-toggle-bar::after,
       &.expanded .menu-toggle-bar::before {
-        background: @light-text-lightgrey;
+        background: @accent-color;
         margin-top: 0;
       }
       &.expanded .menu-toggle-bar::after { .transform(rotate(45deg)); }
       &.expanded .menu-toggle-bar::before { .transform(rotate(-45deg)); }
     }
   
-    //====MENU===//
+    //== MENU ==//
 
     .menu {
       
       .transition(left 0.5s ease);
-      background: @input-box-lightpurple;
-      // color: @nav-color;
+      background: @black-purple;
       cursor: pointer;
-      font-size: 2.6rem;
+      font-size: 2rem;
       line-height: 2.6;
       height: 100vh;
-      left: -@nav-width;
+      left: -300px;
       text-decoration: none;
       padding: 20px;
       position: fixed;
       top: 0;
-      width: @nav-width;
-      z-index: @z-nav;
+      width: 300px;
+      z-index: 2;
       &.expanded { 
         left: 0;
         padding-left: 30px;
-       }
+        box-shadow: @box-shadow;
+      }
   
       ul {
-        .center-vertically;
+        .center-menu;
       }
 
       ul li {
-        border-bottom: 1px solid @light-text-lightgrey;
-        margin-left: 20px;
+        width: 150px;
+        padding: 10px 0;
+        margin-left: 10px;
       }
       ul a {
         
         text-decoration: none;
-        color: @light-text-lightgrey;
-        padding-bottom: 20px;
+        text-transform: uppercase;
+        color: @light-text;
         &:hover {
           color: @accent-color;
           transition: 0.5s ease;
@@ -115,8 +136,3 @@ header {
     }
   }
 }
-
-
-
-
-

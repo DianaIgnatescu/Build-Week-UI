@@ -5,7 +5,10 @@ section {
     justify-content: space-between;
     border-bottom: 1px solid @light-text-lightgrey;
     margin: 20px 0;
-    padding-bottom: 40px;
+    padding: 90px 0 40px 0;
+    @media @tablet {
+      margin: 0 4%;
+    }
     @media @phone {
       flex-direction: column;
       margin: 0 4%;
@@ -15,7 +18,6 @@ section {
       width: 50%;
       @media @phone {
         width: 100%;
-        // margin: 0 4%;
       }
       h2 {
         padding-bottom: 15px;
@@ -23,13 +25,15 @@ section {
       p {
         font-weight: lighter;
       }
+        
       button {
-        #styling-mixins.btn-cta(5px; @accent-color; 1.6rem; @navbar-color; center);
+        #styling.btn-cta(5px; @accent-color; 1.6rem; @navbar-color; center);
         padding: 5px 10px;
         margin: 10px 0;
         border: 2px solid @navbar-color;
         &:hover {
-          #styling-mixins.btn-hover();
+          #styling.btn-hover();
+          cursor: pointer;
         }
       }
     }
@@ -54,6 +58,12 @@ section {
       padding: 0 20px;
       h3 {
         padding: 20px 0;
+      }
+      a {
+        text-decoration: underline;
+        #styling.font-karla;
+        font-size: 1.6rem;
+        color: @accent-color;
       }
       span {
         font-size: 2rem;
@@ -96,61 +106,9 @@ section {
         }
       }
     }
-
   }
 }
 
-// .cards-container {
-//   display: flex;
-//   flex-direction: row;
-//   width: 100%;
-//   margin-top: 16px;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   @media @phone {
-//     flex-direction: column;
-//     margin-top: 40px;
-//   }
-
-
-//   .card {
-//     .flex(space-between, none, column);
-//     max-width: 30%;
-//     margin-bottom: 16px;
-//     @media @phone {
-//       max-width: 92%;
-//       padding:20px 0;
-//       margin: 0 4%;
-//       flex-direction: column;
-//     }
-//     // padding: 24px;
-//     .img-container {
-//         max-width: 100%;
-//         // margin: 20px;
-//       }
-//     .author {
-//       // .flex(space-between, none, row);
-//       margin-top: 15px;
-//       .author {
-//         padding: 10px 0;
-//       }// .img-container {
-//       //   padding-right: 10px;
-//       //   border-right: 1px solid @lambda-times-color-lightgrey;
-//       //   height: 40px;
-//       //   img {
-//       //     width: 40px;
-//       //   }
-//       // }
-//       span {
-//         padding: 20px 0;
-//         font-size: 1.2rem;
-//         letter-spacing: 1px;
-//         font-weight: bold;
-//       }
-//     }
-//   }
-
-// }
 
 
 

@@ -5,7 +5,7 @@
   flex-direction: @dir;
 }
 
-#styling-mixins {
+#styling {
   .border-radius(@radius: 5px) {
     border-radius:@radius;
   }
@@ -24,9 +24,23 @@
 
   .btn-hover() {
     background-color: @navbar-color;
-    color: @main-font-color;
+    color: @light-text;
     border: 2px solid @accent-color;
   }
+
+  .font-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
+    line-height: 2rem;
+    font-weight: 300;   
+  }
+
+  .font-karla {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+
 }
 
 /* mixins */
@@ -34,7 +48,7 @@
 	box-sizing: @box-sizing;
 }
 
-.center-vertically(@position: absolute) {
+.center-menu(@position: absolute) {
 	position: @position;
   top: 50%;
 	transform: translateY(-50%);
@@ -49,6 +63,3 @@
 	transition: @parameters;
 }
 
-.ser-select {
-	user-select: none;
-}
