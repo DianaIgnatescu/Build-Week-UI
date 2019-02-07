@@ -239,6 +239,11 @@ header .navigation .register a:hover {
   color: #FBC441;
   transition: 0.5s ease;
 }
+@media (max-width: 500px) {
+  header .navigation .register a {
+    font-size: 1.3rem;
+  }
+}
 header .navigation .register button {
   font-family: 'Karla', sans-serif;
   line-height: 2.1rem;
@@ -256,6 +261,11 @@ header .navigation .register button:hover {
   border: 2px solid #FBC441;
   transition: 0.5s ease;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  header .navigation .register button {
+    font-size: 1.3rem;
+  }
 }
 header .navigation .menu-toggle {
   user-select: none;
@@ -385,7 +395,8 @@ section .top-content .left-content button {
   text-align: center;
   padding: 5px 10px;
   margin: 10px 0;
-  border: 2px solid #202330;
+  color: #3D3A4F;
+  border: 2px solid #FBC441;
 }
 section .top-content .left-content button:hover {
   background-color: #202330;
@@ -416,6 +427,7 @@ section .bottom-content .testimonials {
 }
 section .bottom-content .testimonials h3 {
   padding: 20px 0;
+  line-height: 1.5;
 }
 section .bottom-content .testimonials a {
   text-decoration: underline;
@@ -424,8 +436,14 @@ section .bottom-content .testimonials a {
   font-size: 1.6rem;
   color: #FBC441;
 }
+section .bottom-content .testimonials p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-style: italic;
+}
 section .bottom-content .testimonials span {
   font-size: 2rem;
+  padding-top: 10px;
 }
 section .bottom-content .testimonials .underline {
   font-size: 1.4rem;
@@ -938,6 +956,7 @@ footer .footer .about-footer .footer-icons .fab {
   padding: 20px 10px 20px 0;
   font-size: 2.6rem;
   color: #676D85;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   footer .footer .about-footer .footer-icons .fab {
@@ -976,6 +995,13 @@ footer .footer .contact-footer p .fas {
   footer .footer .contact-footer p .fas {
     padding-left: 0;
   }
+}
+footer .footer .contact-footer p span {
+  color: #FBC441;
+}
+footer .footer .contact-footer p span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 footer .copyright {
   text-align: center;
@@ -1054,10 +1080,10 @@ section .middle-content {
 .card-overlay .upvote {
   font-size: 1.6rem;
   color: white;
+  padding: 10px;
 }
 .card-overlay p {
   font-size: 1.6rem;
-  color: white;
 }
 .card-overlay button {
   background: none;
