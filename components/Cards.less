@@ -5,10 +5,11 @@ section .middle-content {
     .overlay-inner {
       .close {
         background: none;
-        color: black;
-        top: 0;
+        color: @light-text;
+        top: 300;
         border: 0;
-        font-size: 1.6rem;
+        font-size: 2.4rem;
+        position: fixed;
         cursor: pointer;
         &:hover {
           color: @accent-color;
@@ -72,6 +73,9 @@ section .middle-content {
         font-size: 1.6rem;
         color: white;
         padding: 10px;
+        .fa-heart {
+          padding-right: 5px;
+        }
       }
       p {
         font-size: 1.6rem;
@@ -179,6 +183,8 @@ section .middle-content {
     .overlay img {
       width: 50%;
       align-self: center;
+      padding: 20px 0;
+      margin-left: 25%;
     }
     
     .lazyload,
