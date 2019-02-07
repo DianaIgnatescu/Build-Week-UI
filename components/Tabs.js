@@ -25,6 +25,7 @@ class TabLink {
     const cards = document.querySelectorAll('.card');
 
     cards.forEach((card) => {
+      // eslint-disable-next-line
       card.style.display = 'none';
     });
 

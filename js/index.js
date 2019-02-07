@@ -7,8 +7,6 @@ TweenMax.to('.left-content', 2, { x: 0 });
 TweenMax.from('.tabs', 2, { scale: 0.5 });
 TweenMax.to('.tabs', 2, { scale: 1 });
 
-
-const scrollEvent = document.querySelector('.bottom-content');
 let testimonialsHasLoaded = false;
 window.addEventListener('scroll', () => {
   if (!testimonialsHasLoaded) {
@@ -35,8 +33,10 @@ lazy();
 
 function underlineOnlyActiveElement(element) {
   document.querySelectorAll('.menu li').forEach((menuLink) => {
+    // eslint-disable-next-line
     menuLink.style.textDecoration = 'none';
   });
+  // eslint-disable-next-line
   element.style.color = '#FBC441';
 }
 
