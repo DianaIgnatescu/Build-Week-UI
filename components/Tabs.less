@@ -1,9 +1,6 @@
 .tabs {
   .flex(center, center);
   height: 47px;
-  // @media(min-width: 1280px){
-  //   width: 1280px;
-  // }
   @media @phone {
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,7 +23,7 @@
       max-width: 100%;
       margin: 60px 20px 20px;
     }
-    @media(max-width: 370px) {
+    @media @small-screens {
       margin-bottom: 60px;
     }
     .title {
@@ -37,12 +34,12 @@
     .tab {
       .flex(none, center);
       color: @navbar-color;
-      background-color: @input-box-lightpurple;
+      background-color: @light-purple;
       margin: 5px 5px;
       padding: 5px 10px;
       font-size: 12px;
       letter-spacing: 2px;
-      cursor: pointer;
+      cursor: @cursor;
       font-weight: bold;
       @media @phone {
         flex-wrap: wrap;
@@ -58,7 +55,6 @@
     .active-tab {
       background-color: @accent-color;
       color:@navbar-color;
-      // border: 2px solid yellow;
     }
   }
 }

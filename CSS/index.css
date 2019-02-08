@@ -1,18 +1,6 @@
 #styling .border-bottom-grey {
   border-bottom: 1px solid #BEBEBE;
 }
-#styling .font-raleway {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.8rem;
-  line-height: 2rem;
-  font-weight: 300;
-}
-#styling .font-karla {
-  font-family: 'Karla', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-}
-/* mixins */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -243,12 +231,12 @@ header .navigation .register a {
 }
 header .navigation .register a:hover {
   color: #FBC441;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 @media (max-width: 500px) {
   header .navigation .register a {
     font-size: 1.3rem;
-    padding-right: 5px;
+    padding-right: 10px;
   }
 }
 header .navigation .register button {
@@ -266,7 +254,7 @@ header .navigation .register button:hover {
   background-color: #202330;
   color: #BEBEBE;
   border: 2px solid #FBC441;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -280,7 +268,6 @@ header .navigation .register button:hover {
   }
 }
 header .navigation .menu-toggle {
-  user-select: none;
   cursor: pointer;
   height: 2.1rem;
   position: absolute;
@@ -363,7 +350,7 @@ header .navigation .menu ul a {
 }
 header .navigation .menu ul a:hover {
   color: #FBC441;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 section .top-content {
   display: flex;
@@ -395,9 +382,8 @@ section .top-content .left-content {
 }
 section .top-content .left-content h2 {
   padding-bottom: 15px;
-}
-section .top-content .left-content p {
-  font-weight: lighter;
+  font-weight: bold;
+  font-family: Karla, sans-serif;
 }
 section .top-content .left-content button {
   border-radius: 5px;
@@ -414,6 +400,7 @@ section .top-content .left-content button:hover {
   background-color: #202330;
   color: #BEBEBE;
   border: 2px solid #FBC441;
+  background: none;
   cursor: pointer;
 }
 section .top-content .right-content {
@@ -440,6 +427,10 @@ section .bottom-content .testimonials {
 section .bottom-content .testimonials h3 {
   padding: 20px 0;
   line-height: 1.5;
+  font-weight: bold;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
 }
 section .bottom-content .testimonials a {
   text-decoration: underline;
@@ -450,7 +441,7 @@ section .bottom-content .testimonials a {
 }
 section .bottom-content .testimonials p {
   line-height: 1.5;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 section .bottom-content .testimonials span {
@@ -496,6 +487,9 @@ section .bottom-content .info .info-right {
 section .bottom-content .info .info-right h3 {
   padding-bottom: 20px;
   color: #BEBEBE;
+  font-weight: bold;
+  font-family: Karla, sans-serif;
+  font-size: 2.2rem;
 }
 section .bottom-content .info .info-right p {
   color: #676D85;
@@ -506,6 +500,8 @@ section {
 }
 section .artist-profile {
   display: flex;
+  justify-content: none;
+  align-items: none;
   flex-direction: row;
   margin-top: 60px;
 }
@@ -523,6 +519,8 @@ section .artist-profile {
 }
 section .artist-profile .artist-details {
   display: flex;
+  justify-content: none;
+  align-items: none;
   flex-direction: column;
   width: 30%;
 }
@@ -574,12 +572,12 @@ section .artist-profile .artist-details a {
 }
 section .artist-profile .artist-details a:hover {
   background: #FBC441;
-  transition: 1s ease;
+  transition: all 0.5s ease;
 }
 section .artist-profile .create-a-post {
   width: 70%;
   border: 2px solid #676D85;
-  border-radius: 5px;
+  border-radius: [object Object];
   margin-left: 15%;
 }
 @media (max-width: 500px) {
@@ -601,8 +599,6 @@ section .artist-profile .create-a-post form input {
   display: block;
   border-radius: 5px;
   width: 100%;
-  border-width: 1px;
-  border-style: solid;
   padding: 16px;
   margin: 15px 0;
   outline: 0;
@@ -614,7 +610,7 @@ section .artist-profile .create-a-post form textarea {
   background: #3e3b4f;
   border: none;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #BEBEBE;
   padding: 16px;
   font-size: 1.6rem;
@@ -635,8 +631,9 @@ section .artist-profile .create-a-post form a:hover {
   background-color: #202330;
   color: #BEBEBE;
   border: 2px solid #FBC441;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
+  background: none;
 }
 section .artist-profile .create-a-post .post-container input[type="text"],
 section .artist-profile .create-a-post .post-container input[type="message"],
@@ -767,7 +764,7 @@ section .artist-profile .create-a-post img {
 }
 .container-signin form .alternative-signin button:hover {
   background-color: #3e3b4f;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 .container-signin input[type="email"],
 .container-signin input[type="password"] {
@@ -871,19 +868,23 @@ section .artist-profile .create-a-post img {
   border-bottom: 1px solid #676D85;
 }
 .about-container .about-content h2 {
+  font-weight: bold;
   padding: 60px 0 40px 0;
   color: #FBC441;
+  font-family: Karla, sans-serif;
+  font-size: 2.8rem;
 }
 .about-container .about-content p {
   padding-bottom: 20px;
   color: #BEBEBE;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .about-container .seo-icons {
   margin: 0 20px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
   padding: 40px 0;
   border-bottom: 1px solid #676D85;
 }
@@ -916,10 +917,9 @@ section .artist-profile .create-a-post img {
 .about-container .seo-icons .column h3 {
   text-align: center;
   padding: 20px 0;
-  font-family: 'Karla', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
+  font-family: Karla, sans-serif;
   font-size: 1.8rem;
+  font-weight: bold;
 }
 .about-container .seo-icons .column p {
   color: #BEBEBE;
@@ -931,6 +931,9 @@ section .artist-profile .create-a-post img {
 .about-container .team h2 {
   padding: 50px 0 20px 0;
   color: #FBC441;
+  font-weight: bold;
+  font-family: Karla, sans-serif;
+  font-size: 2.8rem;
 }
 .about-container .team p {
   color: #BEBEBE;
@@ -941,8 +944,9 @@ section .artist-profile .create-a-post img {
 }
 footer .footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
   margin-bottom: 20px;
   border-top: 1px solid #676D85;
   border-bottom: 1px solid #676D85;
@@ -964,6 +968,9 @@ footer .footer .about-footer {
 footer .footer .about-footer h3 {
   padding: 20px 0;
   color: #FBC441;
+  font-weight: bold;
+  font-family: Karla, sans-serif;
+  font-size: 2.6rem;
 }
 footer .footer .about-footer p {
   color: #676D85;
@@ -984,7 +991,7 @@ footer .footer .about-footer .footer-icons .fab {
 }
 footer .footer .about-footer .footer-icons .fab:hover {
   color: #FBC441;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 footer .footer .contact-footer {
   max-width: 35%;
@@ -998,6 +1005,9 @@ footer .footer .contact-footer {
 footer .footer .contact-footer h3 {
   padding: 20px 0;
   color: #FBC441;
+  font-family: Karla, sans-serif;
+  font-size: 2.6rem;
+  text-transform: capitalize;
 }
 footer .footer .contact-footer p {
   color: #676D85;

@@ -23,7 +23,7 @@ header {
       @media @phone {
         font-size: 2rem;
       }
-      @media(max-width: 370px) {
+      @media @small-screens {
         font-size: 1.3rem;
         margin-left: 40px;
       }
@@ -41,11 +41,11 @@ header {
         padding-right: 20px;
         &:hover {
           color: @accent-color;
-          transition: 0.5s ease;
+          transition: @transition;
         }
         @media @phone {
           font-size: 1.3rem;
-          padding-right: 5px;
+          padding-right: 10px;
         }
       }
 
@@ -53,16 +53,19 @@ header {
         #styling.font-karla;
         #styling.btn-cta(5px; @accent-color; 1.6rem; @dark-text; center);
         padding: 3px 10px;
-        border: 2px solid @accent-color;
+        border: @border;
         &:hover {
           #styling.btn-hover();
-          transition: 0.5s ease;
-          cursor: pointer;
+          transition: @transition;
+          cursor: @cursor;
         }
         @media @phone {
           font-size: 1.3rem;
         }
-        @media(max-width: 370px) {
+        // @media(max-width: 370px) {
+        //   padding: 3px 5px;
+        // }
+        @media @small-screens {
           padding: 3px 5px;
         }
       } 
@@ -71,8 +74,8 @@ header {
     // == EXPAND MENU == //
 
     .menu-toggle {
-      user-select: none;
-      cursor: pointer;
+      // user-select: none;
+      cursor: @cursor;
       height: 2.1rem;
       // left: 2rem;
       position: absolute;
@@ -82,7 +85,6 @@ header {
       &:hover { 
         opacity: 0.8; 
       }
-  
       .menu-toggle-bar,
       .menu-toggle-bar::after,
       .menu-toggle-bar::before {
@@ -112,7 +114,7 @@ header {
       
       .transition(left 0.5s ease);
       background: @black-purple;
-      cursor: pointer;
+      cursor: @cursor;
       font-size: 2rem;
       line-height: 2.6;
       height: 100vh;
@@ -145,7 +147,7 @@ header {
         color: @light-text;
         &:hover {
           color: @accent-color;
-          transition: 0.5s ease;
+          transition: @transition;
         }
       }
     }
