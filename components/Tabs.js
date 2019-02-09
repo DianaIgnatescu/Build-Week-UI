@@ -10,6 +10,7 @@ class TabLink {
       this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
     }
 
+    // eslint-disable-next-line no-use-before-define
     this.cards = Array.from(this.cards).map(card => new TabCard(card));
 
     this.tabElement.addEventListener('click', () => this.selectTab());
@@ -45,4 +46,5 @@ class TabCard {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 const tabs = document.querySelectorAll('.tab').forEach(tab => new TabLink(tab));
